@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <div class="container ">
+    <div class="card mt-2 mb-2 text-white">
+      <div class="card-body  bg-success">
+        <h5>Consulta Covide 19 por Estados.</h5><br>
+        <p><strong>Estado: </strong>
+          <%= dado.state %>
+        </p>
+        <p><strong>Casos confirmados: </strong>
+          <%= dado.cases%>
+        </p>
+        <p><strong>Mortes confirmadas: </strong>
+          <%= dado.deaths %>
+        </p>
+        <p><strong>Casos Suspeitos: </strong>
+          <%= dado.suspects %>
+        </p>
+        <p><strong>Ultima atualização: </strong>
+          <%= dado.datetime %>
+        </p>
+      </div>
+    </div>
+    <a href="/" class="btn btn-outline-dark">Verificar outro estado</a>
+  </div>
+</body>
+
+</html>
